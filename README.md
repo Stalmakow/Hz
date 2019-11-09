@@ -27,21 +27,22 @@
 int main () {   
 
     std::string str;
-	std::ifstream file ("/dev/ttyUSB0");  // как файл подгружается сериалпорт
+    std::ifstream file ("/dev/ttyUSB0");  // как файл подгружается сериалпорт
 	
-		 if(file.is_open())     //проверка на доступность и работоспособность файла(необязательный элемент, был добавлен на этапе 
-	 	{                      // подрубания сериалпорта как файла)
-		 std::cout << "open" << std::endl;   
-	 	}
-	 	else
-	 	{
-	 	 std::cout << "eror" << std::endl;
-		 }
-		 while(true){     //пока не надоест считывает из файла содержимое и выводит его
-		 			 for(file >> str; !file.eof(); file >> str){ 
-  					 											std::cout << str << std::endl;  //вывод
-																}
-					}
+      if(file.is_open())     //проверка на доступность и работоспособность файла(необязательный элемент, был добавлен на этапе 
+ 	{                      // подрубания сериалпорта как файла)
+	std::cout << "open" << std::endl;   
+ 	}
+	else
+	{
+	 std::cout << "eror" << std::endl;
+	 }
+	 while(true){     //пока не надоест считывает из файла содержимое и выводит его
+	             for(file >> str; !file.eof(); file >> str){ 
+ 								std::cout << str << std::endl;  //вывод
+								}
+		     }
+ 
  }
 
 
