@@ -3,6 +3,8 @@ void setup() {
 }
 
 void loop() {
-  Serial.print('1');
-  delay(200);
+  int nm = random(100);
+  Serial.println(nm);
+  delay(500);
 }
+
