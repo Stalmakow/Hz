@@ -25,10 +25,10 @@
  Файл 3.cpp
  Содержит код: 
  
-#include <iostream>    
-#include <fstream>    //либа про работу с файлом
+    #include <iostream>    
+    #include <fstream>    //либа про работу с файлом
 
-int main () {   
+    int main () {   
 
     std::string str;
     std::ifstream file ("/dev/ttyUSB0");  // как файл подгружается сериалпорт
@@ -46,8 +46,7 @@ int main () {
  								std::cout << str << std::endl;  //вывод
 								}
 		     }
- 
- }
+    }
 
 
 Когда сделал Файл 3.cpp используя команду
